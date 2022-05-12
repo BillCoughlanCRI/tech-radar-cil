@@ -12,6 +12,7 @@
   function toEntry(row) {
     return {
       label: row.name,
+      title: "Croner-i Tech Radar — 2022.05",
       quadrant: ['Languages & Frameworks','Platforms','Techniques','Tools'].indexOf(row.quadrant),
       ring: ['RETAIN','ASSESS','RATIONALISE'].indexOf(row.ring),
       link: row.link,
@@ -41,19 +42,11 @@
     grid: "#bbb",
     inactive: "#ddd"
   },
-  title: "Zalando Tech Radar — 2022.04",
-  quadrants: [
-    { name: "Languages & Frameworks" },
-    { name: "Platforms" },
-    { name: "Techniques" },
-    { name: "Tools" },
-  ],
-  rings: [
-    { name: "RETAIN", color: "#93c47d" },
-    { name: "ASSESS", color: "#fbdb84" },
-    { name: "RATIONALISE", color: "#efafa9" }
-  ],
-  print_layout: true,
+  entries: my_entries,
+ 
+  print_layout: true
+  
+  
   // zoomed_quadrant: 0,
   //ENTRIES
   
