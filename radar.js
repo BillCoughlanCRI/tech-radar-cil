@@ -48,10 +48,10 @@ function radar_visualization(config) {
   ];
 
   const rings = [
-    { radius: 130 },
-    { radius: 220 },
-    { radius: 310 },
-    { radius: 400 }
+    { radius: 150 },
+    { radius: 300 },
+    { radius: 400 },
+    
   ];
 
   const title_offset =
