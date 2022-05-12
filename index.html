@@ -12,11 +12,11 @@
   function toEntry(row) {
     return {
       label: row.name,
-      title: "Croner-i Tech Radar — 2022.05",
+      
       quadrant: ['Languages & Frameworks','Platforms','Techniques','Tools'].indexOf(row.quadrant),
       ring: ['RETAIN','ASSESS','RATIONALISE'].indexOf(row.ring),
-      link: row.link,
-      moved: ['down','none','up'].indexOf(row.moved) -1,
+      link: row.description,
+      moved: ['down','none','FALSE'].indexOf(row.moved) -1,
       active:true
     }
   }
@@ -42,6 +42,7 @@
     grid: "#bbb",
     inactive: "#ddd"
   },
+  title: "Croner-i Tech Radar — 2022.05",
   quadrants: [
     { name: "Languages & Frameworks" },
     { name: "Platforms" },
