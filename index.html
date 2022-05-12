@@ -2,7 +2,7 @@
 
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<title>Zalando Tech Radar</title>
+<title>Peninsula Tech Radar</title>
 
 <link rel="shortcut icon" href="https://www.croneri.co.uk/themes/custom/croner_i/favicon.ico" type="image/vnd.microsoft.icon">
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -16,7 +16,8 @@
       quadrant: ['Languages and Frameworks','Platform','Techniques','Tools'].indexOf(row.quadrant),
       ring: ['Retain','Assess','Rationalise'].indexOf(row.ring),
       link: row.description,
-      moved: ['down','none','FALSE'].indexOf(row.moved) -2,
+      //moved: ['down','none','FALSE'].indexOf(row.moved) -2,
+      moved:0,
       active:true
     }
   }
@@ -43,7 +44,7 @@
     grid: "#bbb",
     inactive: "#ddd"
   },
-  title: "Croner-i Tech Radar — 2022.05",
+  title: "Peninsula Tech Radar — 2022.05",
   quadrants: [
     { name: "Languages & Frameworks" },
     { name: "Platforms" },
@@ -86,7 +87,7 @@ fetch('./radar.csv')
 <h3>What is the Tech Radar?</h3>
 
 <p>
-The Zalando Tech Radar is a list of technologies, complemented by an assessment result, called <em>ring assignment</em>. We use four rings with the following semantics:
+The Peninsula Tech Radar is a list of technologies, complemented by an assessment result, called <em>ring assignment</em>. We use four rings with the following semantics:
 </p>
 
 <ul>
